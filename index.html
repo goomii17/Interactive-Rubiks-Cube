@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="logic.js"></script>
+    <script src="cube.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.1/p5.js"></script>
+    <title>Rubiks Solver</title>
+</head>
+
+<body>
+    <div id="Title">
+        <h1> Rubik's Cube 3D </h1>
+    </div>
+    <div id="content">
+        <div id="canvasContainer"></div>
+        <div id="info">
+            <div>
+                <label for="Dimensions">Dimensions: </label>
+                <select name="Dimensions" id="dims" onchange="reset()">
+                    <option value="2">2x2</option>
+                    <option value="3" selected>3x3</option>
+                </select>
+            </div>
+            <div>
+                <label for="speed">Cube Speed: </label>
+                <select name="speed" id="speed">
+                    <option value=".5">Very Slow</option>
+                    <option value="2">Slow</option>
+                    <option value="5" selected>Fast</option>
+                    <option value="60">Very Fast</option>
+                </select>
+            </div>
+            <div>
+                <label for="alg">Enter algorithm: </label>
+                <input type="text" name="alg" id="algo">
+                <button id="submit" onclick="submit()">Submit</button>
+            </div>
+            <div>
+                <button onclick="suffle()">Shuffle</button>
+                <button onclick="unsuffle()">Unshuffle</button>
+            </div>
+            <div>
+                <button onclick="reset()">Reset</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
