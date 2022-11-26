@@ -6,7 +6,7 @@ Wheel click to reset rotation
 
 Valid moves: u,u',d,d',l,l',r,r',f,f',b,b'
 
-Key press: u,d,l,r,f,b
+Key press: u,d,l,r,f,b  
 Shift + key press: u',d',l',r',f',b'
 
 Creation Date: 2021-06
